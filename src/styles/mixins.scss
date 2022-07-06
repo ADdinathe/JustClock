@@ -1,0 +1,17 @@
+@mixin transition-opacity {
+  transition: opacity 500ms ease-out;
+}
+
+@keyframes appear-key-frames {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@mixin appearAnimation {
+  animation: 1s ease appear-key-frames;
+}
